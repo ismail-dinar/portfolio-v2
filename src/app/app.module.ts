@@ -13,6 +13,7 @@ import { HireMeComponent } from './components/hire-me/hire-me.component';
 import { CompaniesComponent } from './components/companies/companies.component';
 import { ProvidedServicesComponent } from './components/provided-services/provided-services.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TechnologiesComponent } from './components/technologies/technologies.co
     CompaniesComponent,
     ProvidedServicesComponent,
     TechnologiesComponent,
+    AboutMeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
