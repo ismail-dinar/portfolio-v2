@@ -1,0 +1,16 @@
+.navbar-nav .nav-item a {
+  font-size: 16px;
+  color: #051441;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    color: #3763eb;
+  }
+  &.active {
+    color: #3763eb;
+  }
+}
