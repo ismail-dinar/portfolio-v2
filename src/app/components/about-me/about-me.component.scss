@@ -1,0 +1,30 @@
+.description {
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  max-height: 60%;
+  background: linear-gradient(to top left, #3763eb 0%, #6f58e8 100%);
+  border: 5px solid #eff2f9;
+  border-radius: 2rem;
+  @media screen and (max-width: 478px) {
+    & {
+      padding: 0 !important;
+      width: 40%;
+    }
+  }
+}
+.about-me-img {
+  transform: scale(0.9);
+}
+.person-name {
+  color: #3763eb;
+}
+.person-role {
+  color: #051441;
+}
+.about-content {
+  color: #6a7c92;
+}
+.about-section {
+  background: #eff2f9;
+}
