@@ -11,7 +11,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HireMeComponent } from './components/hire-me/hire-me.component';
 import { CompaniesComponent } from './components/companies/companies.component';
-import { ProvidedServicesComponent } from './components/provided-services/provided-services.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 
@@ -26,7 +25,6 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     ContactComponent,
     HireMeComponent,
     CompaniesComponent,
-    ProvidedServicesComponent,
     TechnologiesComponent,
     AboutMeComponent,
   ],
