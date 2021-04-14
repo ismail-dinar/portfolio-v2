@@ -10,6 +10,7 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
