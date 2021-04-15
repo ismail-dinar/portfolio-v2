@@ -1,7 +1,6 @@
 @import "variables";
 
 .experience-card {
-  border-radius: 0.6em;
   z-index: 0;
   overflow: hidden;
 
@@ -14,9 +13,7 @@
       color: #fff !important;
     }
   }
-  .card {
 
-  }
   .card-body {
     &:before {
       content: "";
@@ -41,6 +38,7 @@
 
 .work-experience {
   overflow: hidden;
+
   &:before {
     position: absolute;
     content: "";
@@ -57,9 +55,11 @@
     }
   }
 }
-.experience-role{
+
+.experience-role {
   color: $deep-cove;
 }
+
 .experience-company {
   color: $royal-blue;
 }
