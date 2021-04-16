@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+:host {
+  #projects{
+    background: $alabaster;
+  }
+
+  .card-title {
+    color: $deep-cove;
+    font-weight: bold;
+  }
+
+  .card-subtitle {
+    color: $royal-blue !important;
+    font-weight: bolder;
+  }
+
+  .technology-badge {
+    background: $royal-blue-gradient;
+  }
+
+  .badge {
+    font-weight: lighter;
+  }
+}
+
