@@ -1,7 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~animate.css/animate.min";
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
 
 .rounded__medium {
   border-radius: 0.6em;
 }
+
