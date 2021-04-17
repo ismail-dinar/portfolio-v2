@@ -1,1 +1,23 @@
-<p>footer works!</p>
+<footer class="mt-5 p-5 position-relative">
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <img src="assets/svg/logo.svg" width="250" alt="" />
+      <h1 class="my-3 text-light">Ismail Dinar</h1>
+      <div class="d-flex justify-content-around gap-4">
+        <ng-container *ngFor="let media of socialMedia; index as i">
+          <span class="social-media" [ngClass]="media">
+            <ng-lottie
+              (mouseenter)="play(i)"
+              (mouseleave)="stop(i)"
+              [options]="options[i]"
+              (animationCreated)="animationCreated($event, i)"
+            ></ng-lottie>
+          </span>
+        </ng-container>
+      </div>
+      <div class="copyright mt-4 pt-4 w-100 text-center">
+        <p class="text-light">© {{ year }} Ismail Dinar</p>
+      </div>
+    </div>
+  </div>
+</footer>
