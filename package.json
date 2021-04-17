@@ -21,6 +21,8 @@
     "@angular/router": "~11.2.3",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.0-beta3",
+    "lottie-web": "^5.7.8",
+    "ngx-lottie": "^6.4.0",
     "rxjs": "~6.6.0",
     "swiper": "^6.5.7",
     "tslib": "^2.0.0",

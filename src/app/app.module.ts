@@ -14,6 +14,12 @@ import { CompaniesComponent } from './components/companies/companies.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { SwiperModule } from 'swiper/angular';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -29,7 +35,12 @@ import { SwiperModule } from 'swiper/angular';
     TechnologiesComponent,
     AboutMeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SwiperModule,
+    LottieModule.forRoot({ player: playerFactory }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
