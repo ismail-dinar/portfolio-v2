@@ -3,7 +3,6 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
-import { CompaniesComponent } from './components/companies/companies.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -24,7 +23,6 @@ export function playerFactory() {
   declarations: [
     AboutMeComponent,
     AppComponent,
-    CompaniesComponent,
     ContactComponent,
     ExperienceComponent,
     FooterComponent,
