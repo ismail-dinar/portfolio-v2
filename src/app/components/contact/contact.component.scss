@@ -1,4 +1,6 @@
-.contact-section {
+@import "variables.scss";
+
+.resume-section {
   background-image: url("../../../assets/img/smiley-face.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +29,7 @@
   }
 }
 
-.contact-btn {
+.resume-btn {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -61,4 +63,27 @@
     -moz-box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
     box-shadow: 0px 0px 30px rgb(46 87 217 / 45%);
   }
+}
+
+.contact-card {
+  border-radius: 30px;
+  box-shadow: 0px 5px 25px rgba(218, 211, 211, 0.3);
+  border: none;
+  border-bottom: 5px solid #585978;
+  transition: all 0.3s ease-out 0s;
+
+  &:hover {
+    border-color: #2f80ed;
+    box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
+  }
+  .card-title{
+    color: $deep-cove;
+  }
+/*   .card-text {
+    color: $royal-blue;
+  } */
+}
+
+.contact-link {
+  text-decoration: none;
 }
