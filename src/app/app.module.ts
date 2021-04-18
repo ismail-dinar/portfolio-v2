@@ -1,21 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { HireMeComponent } from './components/hire-me/hire-me.component';
-import { CompaniesComponent } from './components/companies/companies.component';
-import { TechnologiesComponent } from './components/technologies/technologies.component';
-import { AboutMeComponent } from './components/about-me/about-me.component';
-import { SwiperModule } from 'swiper/angular';
-import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { CompaniesComponent } from './components/companies/companies.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { HomeComponent } from './components/home/home.component';
+import { LottieModule } from 'ngx-lottie';
+import { NgModule } from '@angular/core';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { SwiperModule } from 'swiper/angular';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 
 export function playerFactory() {
   return player;
@@ -23,23 +22,23 @@ export function playerFactory() {
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-    ContactComponent,
-    HireMeComponent,
-    CompaniesComponent,
-    TechnologiesComponent,
     AboutMeComponent,
+    AppComponent,
+    CompaniesComponent,
+    ContactComponent,
+    ExperienceComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+    ProjectsComponent,
+    ResumeComponent,
+    TechnologiesComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    SwiperModule,
+    BrowserModule,
     LottieModule.forRoot({ player: playerFactory }),
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
