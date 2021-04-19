@@ -30,6 +30,7 @@
                     class="link"
                     [ngClass]="{ active: isFirst }"
                     [href]="link.href"
+                    [id]="'link-to-' + link.href.substring(1)"
                     (click)="setActiveLink($event)"
                     >{{ link.title | titlecase }}</a
                   >
