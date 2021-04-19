@@ -67,7 +67,6 @@ export class HeaderComponent implements AfterViewInit, OnInit {
   }
 
   public toggleActiveLink(link: string): void {
-    console.log(link);
     this.document.querySelector('.link.active').classList.remove('active');
     this.document.querySelector('#link-to-' + link).classList.toggle('active');
   }
