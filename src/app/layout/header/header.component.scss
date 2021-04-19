@@ -1,6 +1,6 @@
 .navbar-nav .nav-item a {
   font-size: 16px;
-  color: #051441;
+  color: #fff;
   transition: all 0.3s ease-out 0s;
   position: relative;
   padding: 20px;
@@ -20,10 +20,22 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  ul .link {
+    color: #000;
+  }
+}
+
+.bg-light {
+  ul .link {
+    color: #000;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .navbar {
-  transition: box-shadow 0.3s ease-out, backdrop-filter 0.3s ease-out,
-    box-shadow 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }

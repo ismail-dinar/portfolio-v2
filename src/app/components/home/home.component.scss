@@ -1,8 +1,17 @@
 #home {
-  background-image: url('../../../assets/img/blue-gradient-bg.jpg');
+  background-image: url("../../../assets/svg/sun-tornado.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
 .wave {
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
+
+.show {
+  ul {
+    background: #fff;
+  }
+}
+
