@@ -1,9 +1,11 @@
+@import "variables";
+
 #home {
-  background-image: url("../../../assets/svg/sun-tornado.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  height: 90vh;
+  overflow: hidden;
+  background: $pacific-blue;
 }
+
 .wave {
   bottom: -1px;
   left: 0;
@@ -15,3 +17,41 @@
   }
 }
 
+.introduction {
+  @media screen and (min-width: 1200px) {
+    &__greeting {
+      font-size: 5em;
+    }
+
+    &__content {
+      font-size: 2em;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__greeting {
+      font-size: 3em;
+    }
+
+    &__content {
+      font-size: 1.5em;
+    }
+  }
+}
+
+
+.hand {
+  animation: wave-animation 4s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }
+100% { transform: rotate( 0.0deg) }
+}
