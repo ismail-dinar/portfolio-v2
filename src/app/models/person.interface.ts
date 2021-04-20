@@ -3,7 +3,7 @@ export interface IPerson {
   birthDate: Date;
   email: string;
   firstName: string;
-  keywords: string[];
+  descriptions: string[];
   lastName: string;
   phone: string;
   role: string;

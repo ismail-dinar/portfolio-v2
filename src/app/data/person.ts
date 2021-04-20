@@ -5,7 +5,7 @@ export const person: IPerson = {
   birthDate: new Date(),
   email: 'ismaildinar96@gmail.com',
   firstName: 'Ismail',
-  keywords: ['thoughtful', 'self-motivated', 'passionate'],
+  descriptions: ['thoughtful', 'self-motivated', 'passionate'],
   lastName: 'Dinar',
   phone: '+216 90 384 082',
   role: 'Software Engineer',
