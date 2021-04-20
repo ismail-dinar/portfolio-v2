@@ -7,8 +7,8 @@
         >
           <h1 class="fw-bold introduction__greeting">Hey! <img class="ms-3 hand" src="assets/img/hand.png" alt=""></h1>
           <p class="mt-4 introduction__content" style="text-align: justify">
-            My name is <strong>Ismail</strong>, this is my portfolio where you
-            can read about me, my experience and what I've accomplished as a Software Engineer.
+            My name is <strong>{{person.firstName}}</strong>, this is my portfolio where you
+            can read about me, my experience and what I've accomplished as a {{person.role}}.
           </p>
         </div>
       </div>
@@ -16,7 +16,7 @@
         <div
           class="d-flex justify-content-md-end justify-content-center animate__animated animate__zoomIn"
         >
-          <img class="img-fluid person-img" src="assets/img/me.png" alt="" />
+          <img class="img-fluid" src="assets/img/me.png" alt="" />
         </div>
       </div>
     </div>
