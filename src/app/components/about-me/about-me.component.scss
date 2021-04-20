@@ -1,32 +1,39 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .description {
   bottom: 0;
   right: 0;
-  width: 30%;
-  max-height: 60%;
-  background: $royal-blue-gradient;
+  width: auto;
+  height: auto;
+  background: $pacific-blue-gradient;
   border: 5px solid #eff2f9;
   border-radius: 2rem;
   @media screen and (max-width: 478px) {
-    & {
-      padding: 0 !important;
-      width: 40%;
+    display: none;
+    ul {
+      font-size: 1em !important;
     }
   }
 }
 .about-me-img {
-  transform: scale(0.9);
+  @media screen and (min-width: 768px) {
+    transform: scale(0.9);
+  }
 }
 .person-name {
-  color: #3763eb;
+  color: $pacific-blue;
 }
 .person-role {
-  color: #051441;
+  color: $deep-cove;
 }
 .about-content {
   color: #6a7c92;
+  @media screen and (max-width: 768px) {
+    font-size: 1.3em !important;
+    text-align: justify;
+    hyphens: auto;
+  }
 }
 .about-section {
-  background: $alabaster
+  background: $alabaster;
 }

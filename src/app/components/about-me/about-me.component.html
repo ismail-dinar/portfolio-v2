@@ -1,35 +1,34 @@
 <section id="about" class="mt-5 pt-5">
   <div class="position-relative about-section py-5">
     <div class="row g-0">
-      <div class="col-12 col-lg-6 px-5 px-0">
+      <div class="col-12 col-xl-7 px-5 px-0">
         <div class="wow position-relative animate__animated animate__fadeInLeft">
           <img
             class="img-fluid about-me-img"
             src="assets/img/about-me.png"
             alt=""
           />
-          <div class="description position-absolute p-3">
-            <ul class="text-light fs-6">
-              <li>one</li>
-              <li>two</li>
-              <li>Three</li>
-              <li>Four</li>
+          <div class="description position-absolute p-xl-3 p-md-2 p-1">
+            <ul class="text-light fs-4">
+              <li *ngFor="let description of person.descriptions"> {{ description | titlecase}}</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-5 pt-5 px-5 px-0">
+      <div class="col-12 col-xl-5 pt-5 px-5 px-0">
         <div class="wow animate__animated animate__zoomIn">
           <div id="about-content-title">
-            <h1 class="person-name fw-bolder">Ismail Dinar</h1>
-            <h2 class="person-role mb-4 fw-bold">Full Stack Web Developer</h2>
+            <h1 class="person-name fw-bolder">{{fullName}}</h1>
+            <h2 class="person-role mb-4 fw-bold">{{person.role}}</h2>
           </div>
           <div id="about-content">
-            <p class="fs-4 about-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              corrupti, eum laboriosam quidem cumque alias molestiae quisquam
-              sed minus quod eligendi similique tempore. Eos obcaecati commodi
-              saepe! Inventore, voluptates eveniet!
+            <p class="fs-2 about-content">
+              I'm a 25 years old Full Stack Web Developer, I received my engineering
+              degree from the National Institute of Applied Science and Technology in
+              July 2020. I'm currently working as Software developer at New Access. I
+              love programming and I eager to learn new things every day. In my free
+              time I enjoy reading articles about web development, learning new things
+              and playing video games.
             </p>
           </div>
         </div>
