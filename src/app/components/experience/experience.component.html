@@ -4,13 +4,13 @@
       <div class="col-6 mx-auto">
         <div class="text-center">
           <h3
-            class="wow animate__animated animate__fadeInUp"
+            class="wow animate__animated animate__fadeInUp section-title"
             data-wow-delay=".4s"
           >
             Experience
           </h3>
           <h1
-            class="wow animate__animated animate__fadeInUp"
+            class="wow animate__animated animate__fadeInUp section-subtitle"
             data-wow-delay=".6s"
           >
             Work Experience
@@ -18,55 +18,46 @@
         </div>
       </div>
     </div>
-    <div class="work-experience row align-items-center mt-5 position-relative pb-5">
-      <div class="col-12 mt-5">
+    <div
+      class="work-experience row align-items-center mt-5 position-relative pb-5"
+    >
+      <div
+        class="col-12 mt-5"
+        *ngFor="let experience of experiences; index as i"
+      >
         <div class="row">
-          <div class="col-lg-5 order-lg-first order-last">
+          <div
+            class=""
+            [ngClass]="i % 2 == 0 ? evenCardClasses : oddCardClasses"
+          >
             <div
               class="card shadow experience-card rounded__medium position-relative"
               style="border: 0"
             >
-              <div class="card-body p-4 text-dark fs-5">
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos
-                  quiblanditiis praesentium At vero eos et accusamus et iusto
-                  odio dignissimos ducimusm.
+              <div class="card-body p-4 text-dark fs-6">
+                <p class="mb-0">
+                  {{ experience.description.header }}
                 </p>
-                <div class="animated"></div>
+                <ul *ngIf="experience.description.content.length > 0">
+                  <li *ngFor="let line of experience.description.content">
+                    {{ line }}
+                  </li>
+                </ul>
+              </div>
+              <div class="p-3 d-flex gap-3 flex-wrap">
+                <span class="badge technology-badge" *ngFor="let technology of experience.technologies">{{technology}}</span>
               </div>
             </div>
           </div>
           <div
-            class="col-lg-5 order-lg-last order-first offset-lg-2 d-flex flex-column justify-content-center align-items-start"
+            class=""
+            [ngClass]="i % 2 == 0 ? evenTitleClasses : oddTitleClasses"
           >
-            <h3 class="fw-bold mb-1 experience-role">Research</h3>
-            <p class="fs-5 fw-bolder mb-1 experience-company">New Access</p>
-            <p class="fw-bolder text-muted">2021 2021</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 mt-5">
-        <div class="row">
-          <div class="col-lg-5 order-lg-last offset-lg-2 order-last">
-            <div
-              class="card shadow experience-card rounded__medium position-relative"
-              style="border: 0"
-            >
-              <div class="card-body p-4 text-dark fs-5">
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos
-                  quiblanditiis praesentium At vero eos et accusamus et iusto
-                  odio dignissimos ducimusm.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-5 order-lg-first order-first d-flex flex-column justify-content-center align-items-start align-items-lg-end"
-          >
-            <h3 class="fw-bold mb-1 experience-role">Research</h3>
-            <p class="fs-5 fw-bolder mb-1 experience-company">New Access</p>
-            <p class="fw-bolder text-muted">2021 2021</p>
+            <h3 class="fw-bold mb-1 experience-role">{{ experience.role }}</h3>
+            <p class="fs-5 fw-bolder mb-1 experience-company">
+              {{ experience.company }}
+            </p>
+            <p class="fw-bolder text-muted">{{ experience.period }}</p>
           </div>
         </div>
       </div>

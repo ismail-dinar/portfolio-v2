@@ -1,14 +1,26 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~animate.css/animate.min";
-@import '~swiper/swiper-bundle.min';
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-
+@import "~swiper/swiper-bundle.min";
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import "variables";
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .rounded__medium {
   border-radius: 0.6em;
 }
 
+.section-title {
+  color: $pacific-blue;
+}
+
+.section-subtitle {
+  color: $deep-cove;
+}
+
+.technology-badge {
+  background: $pacific-blue-gradient;
+  font-weight: normal;
+}

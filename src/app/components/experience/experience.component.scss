@@ -4,13 +4,17 @@
   z-index: 0;
   overflow: hidden;
 
-  p {
+  p, ul {
     transition: all 0.3s ease-out;
   }
 
   &:hover {
-    p {
+    p, ul {
       color: #fff !important;
+    }
+
+    &.technology-badge {
+      background: white !important;
     }
   }
 
@@ -21,7 +25,7 @@
       z-index: -1;
       top: -32px;
       left: -32px;
-      background: $royal-blue-gradient;
+      background: $pacific-blue-gradient;
       height: 32px;
       width: 32px;
       border-radius: 32px;
@@ -49,7 +53,7 @@
     height: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: $royal-blue-gradient;
+    background: $pacific-blue;
     @media screen and (max-width: 992px) {
       display: none;
     }
@@ -61,5 +65,5 @@
 }
 
 .experience-company {
-  color: $royal-blue;
+  color: $pacific-blue;
 }
