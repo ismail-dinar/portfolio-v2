@@ -9,21 +9,18 @@ declare var VanillaTilt;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterViewInit, OnInit{
+export class AppComponent implements AfterViewInit{
   title = 'portfolio-v2';
 
   public constructor(@Inject(DOCUMENT) private document: Document){}
 
-  public ngOnInit(): void {
+  public ngAfterViewInit(): void {
     VanillaTilt.init(this.document.querySelectorAll(".tiltable-card"), {
       max: 10,
       speed: 400,
       glare: true,
     });
 
-  }
-
-  public ngAfterViewInit(): void {
     new WOW().init();
   }
 }

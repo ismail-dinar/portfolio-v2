@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { projects } from '../../data/projects';
+import { IProject } from '../../models/project.interface';
 
 @Component({
   selector: 'app-projects',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
+
+  public readonly projects: IProject[] = projects.sort((a, b) => (a.position > b.position && 1) || -1);
 
   constructor() { }
 

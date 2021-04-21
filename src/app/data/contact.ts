@@ -1,4 +1,4 @@
-import { IContact } from './../models/contact.interface';
+import { IContact } from '../models/contact.interface';
 
 export const contacts: IContact[] = [
   {

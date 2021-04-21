@@ -1,4 +1,4 @@
-import { ILink } from './../models/link.interface';
+import { ILink } from '../models/link.interface';
 export const links: ILink[] = [
   {
     href: '#home',

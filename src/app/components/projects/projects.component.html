@@ -19,57 +19,17 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch">
-        <div class="card shadow border-0 rounded__medium position-relative tiltable-card">
+      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch" *ngFor="let project of projects">
+        <div
+          class="card shadow border-0 rounded__medium position-relative tiltable-card"
+        >
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-              alias hic quos dolorum nihil excepturi officiis ipsum quaerat quas
-              ipsa deleniti porro doloremque veritatis, debitis delectus fugiat
-              ea mollitia dolore.
-            </p>
+            <h5 class="card-title">{{project.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{project.period}}</h6>
+            <p class="card-text" [innerHTML]="project.description"></p>
           </div>
-          <div class="p-3">
-            <span class="badge technology-badge mx-2">Primary</span>
-            <span class="badge technology-badge mx-2">Primary</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch">
-        <div class="card shadow border-0 rounded__medium position-relative tiltable-card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              deserunt accusantium asperiores iure iste at ipsum inventore
-              velit, soluta dolorem laboriosam commodi, nemo nisi, id eligendi?
-              Cupiditate eligendi repellat quo!
-            </p>
-          </div>
-          <div class="p-3">
-            <span class="badge technology-badge mx-2">Primary</span>
-            <span class="badge technology-badge mx-2">Primary</span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch">
-        <div class="card shadow border-0 rounded__medium position-relative tiltable-card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-              assumenda ex iure corrupti sapiente illum. Maxime magnam delectus
-              iure! Quo dolor repellat fugiat quos quia sed odit assumenda autem
-              minima?
-            </p>
-          </div>
-          <div class="p-3">
-            <span class="badge technology-badge mx-2">Primary</span>
-            <span class="badge technology-badge mx-2">Primary</span>
+          <div class="p-3 d-flex gap-3 flex-wrap">
+            <span class="badge technology-badge" *ngFor="let technology of project.technologies">{{technology}}</span>
           </div>
         </div>
       </div>
