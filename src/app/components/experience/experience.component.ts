@@ -7,12 +7,11 @@ import { experiences } from '../../data/experiences';
   styleUrls: ['./experience.component.scss'],
 })
 export class ExperienceComponent implements OnInit {
-  public oddCardClasses: string = 'col-lg-5 order-lg-first order-last';
-  public evenCardClasses: string = 'col-lg-5 offset-lg-2 order-last';
+  public oddCardClasses: string = 'order-lg-first';
+  public evenCardClasses: string = 'offset-lg-2';
   public oddTitleClasses: string =
-    'col-lg-5 order-lg-last order-first offset-lg-2 d-flex flex-column justify-content-center align-items-center align-items-lg-start';
-  public evenTitleClasses: string =
-    'col-lg-5 order-first d-flex flex-column justify-content-center align-items-center align-items-lg-end';
+    'order-lg-last offset-lg-2 align-items-lg-start';
+  public evenTitleClasses: string = 'align-items-lg-end';
   public readonly experiences: IExperience[] = experiences;
   constructor() {}
 

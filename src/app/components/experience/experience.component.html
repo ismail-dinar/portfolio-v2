@@ -27,7 +27,7 @@
       >
         <div class="row">
           <div
-            class=""
+            class="col-lg-5 order-last"
             [ngClass]="i % 2 == 0 ? evenCardClasses : oddCardClasses"
           >
             <div
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div
-            class=""
+            class="col-lg-5 order-first d-flex flex-column justify-content-center align-items-center"
             [ngClass]="i % 2 == 0 ? evenTitleClasses : oddTitleClasses"
           >
             <h3 class="fw-bold mb-1 experience-role">{{ experience.role }}</h3>
