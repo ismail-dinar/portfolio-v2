@@ -4,6 +4,9 @@
   height: 90vh;
   overflow: hidden;
   background: $pacific-blue;
+  @media screen and(max-width: 576px) {
+    height: 100vh;
+  }
 }
 
 .wave {
