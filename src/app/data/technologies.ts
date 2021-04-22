@@ -37,8 +37,8 @@ export const technologies: ITechnology[] = [
     position: 7
   },
   {
-    name: "github",
-    logo: 'github',
+    name: "git",
+    logo: 'git',
     position: 8,
   },
   {
