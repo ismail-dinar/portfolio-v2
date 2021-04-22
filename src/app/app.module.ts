@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { SwiperModule } from 'swiper/angular';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
+import { SectionTitleComponent } from './ui/section-title/section-title.component';
 
 export function playerFactory() {
   return player;
@@ -31,6 +32,7 @@ export function playerFactory() {
     ProjectsComponent,
     ResumeComponent,
     TechnologiesComponent,
+    SectionTitleComponent,
   ],
   imports: [
     AppRoutingModule,
