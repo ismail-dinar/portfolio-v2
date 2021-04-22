@@ -1,23 +1,28 @@
 <section id="resume" class="position-relative my-5 py-5">
   <div class="resume-section w-100 d-flex align-items-center">
-    <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
+    <div class="container h-100">
+      <div class="row h-100 d-flex justify-content-center align-items-center">
         <div class="col-xl-5 col-lg-7">
           <div class="section-title mb-60">
-            <span class="text-white wow fadeInDown" data-wow-delay=".2s"
-              >Hey</span
+            <h1
+              class="wow fadeInUp"
+              data-wow-delay=".4s"
             >
-            <h2 class="text-white wow fadeInUp" data-wow-delay=".4s">
-              Do you have any project in mind?
-            </h2>
-            <p class="text-white wow fadeInUp" data-wow-delay=".6s">
-              At vero eos et accusamus et iusto odio dignissimos ducimus
-              quiblanditiis praesentium
-            </p>
+              My resume
+            </h1>
           </div>
         </div>
         <div class="col-xl-7 col-lg-5 d-flex justify-content-end">
-          <a class="resume-btn">Download</a>
+          <a (click)="play()" href="assets/docs/resume_en.pdf"  class="btn py-3 px-5 d-flex align-items-center gap-3 shadow rounded__medium resume-btn" download>
+            <ng-lottie
+              width="32px"
+              height="32px"
+              [options]="options"
+              (complete)="onComplete()"
+              (animationCreated)="animationCreated($event)"
+            ></ng-lottie>
+            Download
+          </a>
         </div>
       </div>
     </div>
