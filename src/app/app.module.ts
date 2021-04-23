@@ -15,6 +15,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { SwiperModule } from 'swiper/angular';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { SectionTitleComponent } from './ui/section-title/section-title.component';
+import { ScrollToTopComponent } from './ui/scroll-to-top/scroll-to-top.component';
 
 export function playerFactory() {
   return player;
@@ -33,6 +34,7 @@ export function playerFactory() {
     ResumeComponent,
     TechnologiesComponent,
     SectionTitleComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     AppRoutingModule,

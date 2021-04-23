@@ -1,0 +1,13 @@
+@import 'variables';
+
+.scroll-top-btn {
+  bottom: 0;
+  right: 0;
+  background: $pacific-blue-gradient;
+  height: 58px;
+  box-shadow: 0px 8px 25px rgba(47, 128, 237, 0.35);
+
+  ::ng-deep div {
+    transform: rotate(90deg);
+  }
+}

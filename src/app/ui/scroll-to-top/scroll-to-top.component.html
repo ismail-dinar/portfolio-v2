@@ -1,0 +1,9 @@
+<a *ngIf="showButton" href="#" (click)="play()" class="position-fixed rounded-circle btn scroll-top-btn d-flex align-items-center m-4">
+  <ng-lottie
+    width="32px"
+    height="32px"
+    [options]="options"
+    (complete)="onComplete()"
+    (animationCreated)="animationCreated($event)"
+  ></ng-lottie>
+</a>
