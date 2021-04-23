@@ -1,3 +1,5 @@
+@import 'variables';
+
 .navbar-nav .nav-item a {
   font-size: 16px;
   color: #fff;
@@ -8,10 +10,13 @@
   align-items: center;
   text-decoration: none;
   &:hover {
-    color: #3763eb;
+    color: $yale-blue;
+    font-weight: bolder;
   }
+
   &.active {
-    color: #3763eb;
+    color: $yale-blue;
+    font-weight: bolder;
   }
 }
 
@@ -22,13 +27,13 @@
   -webkit-backdrop-filter: blur(6px);
 
   ul .link {
-    color: #000;
+    color: $deep-cove;
   }
 }
 
 .bg-light {
   ul .link {
-    color: #000;
+    color: $deep-cove;
   }
 }
 

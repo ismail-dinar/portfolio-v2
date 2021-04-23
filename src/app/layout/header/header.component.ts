@@ -68,7 +68,8 @@ export class HeaderComponent implements AfterViewInit, OnInit {
 
   public toggleActiveLink(link: string): void {
     this.document.querySelector('.link.active').classList.remove('active');
-    this.document.querySelector('#link-to-' + link).classList.toggle('active');
+    this.currentLink = this.document.querySelector('#link-to-' + link);
+    this.currentLink.classList.toggle('active');
   }
 
   public changeNavbarBg(): void {
@@ -102,7 +103,7 @@ export class HeaderComponent implements AfterViewInit, OnInit {
           this.toggleActiveLink(visibleSection.id);
         }
       },
-      { threshold: 1.0 }
+      { threshold: [ 1, 0.5] }
     );
     links.forEach((link) =>
       io.observe(this.document.querySelector(link.getAttribute('href')))
