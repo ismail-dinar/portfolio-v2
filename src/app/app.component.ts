@@ -7,11 +7,8 @@ declare var VanillaTilt;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit{
-  title = 'portfolio-v2';
-
   public constructor(@Inject(DOCUMENT) private document: Document){}
 
   public ngAfterViewInit(): void {
