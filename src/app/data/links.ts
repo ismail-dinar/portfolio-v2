@@ -33,13 +33,13 @@ export const links: ILink[] = [
   {
     href: '#contact',
     title: 'contact',
-    position: 8,
+    position: 7,
     hidden: false,
   },
   {
     href: '#resume',
     title: 'resume',
-    position: 7,
+    position: 8,
     hidden: false,
   },
 ];
