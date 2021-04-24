@@ -5,7 +5,7 @@ This is the source for the second version of my portfolio.
 ## Built With
 
 - [Angular 11](https://angular.io/)
-- [Bootstrap v5](https://www.typescriptlang.org/)
+- [Bootstrap v5](https://getbootstrap.com/)
 - [Animate.css](https://animate.style/)
 
 ## License
