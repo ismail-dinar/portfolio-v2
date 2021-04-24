@@ -1,6 +1,8 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { socialMedia } from 'src/app/data/social-media';
+import { ISocialMedia } from 'src/app/models/social-media.interface';
 
 @Component({
   selector: 'app-footer',
@@ -8,18 +10,17 @@ import { AnimationOptions } from 'ngx-lottie';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  private animationItem: AnimationItem;
-  public socialMedia: string[] = ['facebook', 'linkedin', 'github', 'twitter'];
+  public readonly socialMedia: ISocialMedia[] = socialMedia;
   public options: AnimationOptions[] = [];
-  private animationItems: AnimationItem[] = [];
   public year: number = new Date().getFullYear();
+  private animationItems: AnimationItem[] = [];
 
   public constructor(private ngZone: NgZone) {}
 
   public ngOnInit(): void {
     this.socialMedia.forEach((item) => {
       this.options.push({
-        path: `assets/json/${item}.json`,
+        path: `assets/json/${item.icon}.json`,
         autoplay: false
       })
     });

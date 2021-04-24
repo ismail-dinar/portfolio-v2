@@ -1,13 +1,10 @@
-footer {
-  background-color: #051441;
+@import 'variables';
 
-  background-size: cover;
-}
 
 .social-media {
   border-radius: 15%;
   cursor: pointer;
-  width: 5em;
+  width: calc(2em + 2vw);
 }
 
 .facebook {

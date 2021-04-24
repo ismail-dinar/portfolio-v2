@@ -1,22 +1,21 @@
 <footer class="mt-5 p-5 position-relative">
   <div class="container">
     <div class="d-flex flex-column justify-content-center align-items-center">
-      <img src="assets/svg/logo.svg" width="250" alt="" />
-      <h1 class="my-3 text-light">Ismail Dinar</h1>
+      <img class="mb-5" src="assets/svg/logo-blue.svg" alt="" />
       <div class="d-flex justify-content-around gap-4">
         <ng-container *ngFor="let media of socialMedia; index as i">
-          <span class="social-media" [ngClass]="media">
+          <a [href]="media.url" target="_blank" class="social-media" [ngClass]="media.name">
             <ng-lottie
               (mouseenter)="play(i)"
               (mouseleave)="stop(i)"
               [options]="options[i]"
               (animationCreated)="animationCreated($event, i)"
             ></ng-lottie>
-          </span>
+          </a>
         </ng-container>
       </div>
       <div class="copyright mt-4 pt-4 w-100 text-center">
-        <p class="text-light">© {{ year }} Ismail Dinar</p>
+        <p class="text-dark">© {{ year }} Ismail Dinar</p>
       </div>
     </div>
   </div>
