@@ -12,6 +12,7 @@ import { DOCUMENT } from '@angular/common';
 import { AnimationOptions } from 'ngx-lottie';
 import { AnimationItem } from 'lottie-web';
 import { find } from 'lodash';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
