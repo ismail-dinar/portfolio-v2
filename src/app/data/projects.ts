@@ -26,7 +26,7 @@ export const projects: IProject[] = [
   },
   {
     description:
-      'It is a website where Autoclub INSAT presents there activities and events. <br> This project was developed using Angular and Firebase.',
+      'It is a website where Autoclub INSAT presents their activities and events. <br> This project was developed using Angular and Firebase.',
     period: '2019',
     position: 2,
     technologies: [
