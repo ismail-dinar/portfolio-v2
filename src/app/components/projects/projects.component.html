@@ -6,9 +6,10 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch" *ngFor="let project of projects">
+      <div class="col-lg-4 col-12 col-md-6 py-3 d-flex align-self-stretch" *ngFor="let project of projects; index as i">
         <div
-          class="card shadow border-0 rounded__medium position-relative tiltable-card"
+          class="card shadow border-0 rounded__medium position-relative tiltable-card wow animate__animated animate__fadeInUp"
+          [attr.data-wow-duration]=" 0.5 * (i + 1) + 's'"
         >
           <div class="card-body">
             <h5 class="card-title">{{project.title}}</h5>
