@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .navbar-nav .nav-item a {
   font-size: 16px;
@@ -39,6 +39,10 @@
   ul .link {
     color: $deep-cove;
   }
+
+  .logo {
+    fill: #1a5b92 !important;
+  }
 }
 
 .navbar-toggler:focus {
@@ -47,4 +51,10 @@
 
 .navbar {
   transition: all 0.3s ease-out;
+}
+
+@media screen and (max-width: 576px) {
+  .logo-svg {
+    transform: scale(0.6);
+  }
 }
