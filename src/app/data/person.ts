@@ -1,7 +1,7 @@
 import { IPerson } from "../models/person.interface";
 
 export const person: IPerson = {
-  age: 25,
+  age: new Date().getFullYear() - new Date('04-07-1996').getFullYear(),
   birthDate: new Date(),
   email: 'ismaildinar96@gmail.com',
   firstName: 'Ismail',

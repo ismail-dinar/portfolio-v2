@@ -3,10 +3,13 @@ import { IExperience } from '../models/experience.interface';
 export const experiences: IExperience[] = [
   {
     period: 'Jan 2021 - Present',
-    role: 'Software Developer',
+    role: 'Frontend Developer',
     technologies: [
       'Angular',
       'AngularJS',
+      'JavaScript',
+      'TypeScript',
+      'Storybook',
       'Bitbucket',
       'Formly',
       'Git',
@@ -19,14 +22,13 @@ export const experiences: IExperience[] = [
     position: 1,
     description: {
       header:
-        'As a member of the Digital Solutions Team within New Access, I have a hand in:',
+        'In an agile environment, I take part in the development and maintenance of Bankers\' Front, a Digital Wealth Management platform currently used by large Private Banks mainly in Switzerland and Luxembourg:',
       content: [
-        'The Development of new Angular libraries and their integration with AngularJS.',
-        "The evolution and maintenance of Banker's Front and E-Banking and their libraries.",
-        'The evolution and maintenance of the new access kendo/formly based UI library.',
-        'Code reviewing.',
-        'Providing support to my teammates.',
-        'Releasing new versions of the different libraries.',
+        'Improved the ordering module user interface by reducing the cognitive effort required from users to place orders on the market.',
+        'Collaborated on bringing to life the most awaited feature by customers, the client onboarding process. ',
+        'Contributed to the development and maintenance of an internal UI library based on Kendo UI and documented using Storybook while maintaining 100% code coverage. ',
+        'Engaged with a team of 15 developers in the transformation of large applications built on a legacy framework (AngularJS) into a modern, fully functional application written in Angular.',
+        'Involved in the hiring process of new talent, performing interviews alongside colleagues.',
       ],
     },
   },
@@ -35,6 +37,8 @@ export const experiences: IExperience[] = [
     role: 'Software Engineer',
     technologies: [
       'Angular',
+      'JavaScript',
+      'TypeScript',
       'Bootstrap',
       'DevExtreme',
       'Docker',
@@ -46,12 +50,11 @@ export const experiences: IExperience[] = [
     company: 'Be Wireless Solutions',
     position: 2,
     description: {
-      header: 'Development of Passenger information system application:',
+      header: 'I was responsible for the design and development of web and mobile projects as well as artificial intelligence projects:',
       content: [
-        'Development of UI using Angular, Angular Material, Bootstrap, DevExtreme, and Leaflet.',
-        'Development of RESTful API using JavaEE and JWT based authentication.',
-        'Development of a mobile application using Ionic.',
-        ' Dockerizing and deploying the application.',
+        'Implemented a web and mobile-based passenger information system for a major national bus company.',
+        'Built and maintained a legal document information extraction pipeline using machine learning techniques.',
+        'Improved the workflow of a GPS data processing software that handled data flow between multiple servers resulting in 15% more data being processed each second.',
       ],
     },
   },
@@ -62,13 +65,15 @@ export const experiences: IExperience[] = [
     company: 'Be Wireless Solutions',
     position: 3,
     description: {
-      header: 'Development of AI based driver assessment system.',
-      content: [],
+      header: 'Development of AI based driver assessment system:',
+      content: [
+        'Undertook the research and development of an AI-based driver assessment model that achieved an overall accuracy of 85% using various techniques including data mining and machine learning.'
+      ],
     },
   },
   {
     period: 'Jun 2019 - Aug 2019',
-    role: 'Summer Intern',
+    role: 'FullStack Developer',
     technologies: [
       'Angular Material',
       'Angular',
@@ -82,10 +87,9 @@ export const experiences: IExperience[] = [
     company: 'Be Wireless Solutions',
     position: 4,
     description: {
-      header: 'Development of a smart lighting system dashboard.',
+      header: 'Development of a smart lighting system dashboard:',
       content: [
-        'Development of the back-end using Java EE',
-        'Development of the front-end using Angular',
+        'Analyzed, designed, and developed a smart lighting system dashboard that allows the control and management of thousands of connected light poles.'
       ],
     },
   },
