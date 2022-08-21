@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { AfterViewInit, Component, Inject } from '@angular/core';
-import { WOW } from 'wowjs/dist/wow.min';
+import WOW from 'wow.js';
 
 declare var VanillaTilt;
 
